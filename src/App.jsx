@@ -8,7 +8,16 @@ import './App.css'
 export const App = () => {
   return (
     <div>
-      <header>DogApp</header>
+      <header>
+        <h1>Dogアプリ</h1>
+      </header>
+      <main>
+        <p>犬の画像を表示するサイトです。</p>
+        <img
+          src="https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
+          alt="犬の画像"
+        />
+      </main>
     </div>
   )
 }
