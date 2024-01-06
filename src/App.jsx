@@ -12,8 +12,9 @@ export const App = () => {
   )
 
   const changeDogImage = () => {
-    console.log('inu')
-    setDogUrl('https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg')
+    fetch('https://dog.ceo/api/breeds/image/random')
+      .then(res => res.json())
+      .then(json => setDogUrl(json.message))
   }
 
   return (
