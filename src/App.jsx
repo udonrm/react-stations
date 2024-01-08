@@ -2,6 +2,9 @@
 
 import './App.css'
 import { useState } from 'react'
+import Header from './Header'
+import Description from './Description'
+import DogImage from './DogImage'
 
 /**
  * @type {() => JSX.Element}
@@ -19,18 +22,13 @@ export const App = () => {
 
   return (
     <>
-      <header className="header">
-        <h1>Dogアプリ</h1>
-      </header>
+      <Header />
       <main className="main">
         <div className="description">
-          <p>犬の画像を表示するサイトです。</p>
-          <img src={dogUrl} alt="犬の画像" className="dogImage" />
+          <Description buttonOption={changeDogImage} />
+          <DogImage imageUrl={dogUrl} />
           <br />
         </div>
-        <button className="updateButton" onClick={changeDogImage}>
-          更新
-        </button>
       </main>
     </>
   )
