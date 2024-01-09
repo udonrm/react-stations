@@ -12,6 +12,7 @@
 .dogImage {
   width: 400px;
   height: 400px;
+  padding: 20px;
 }
 
 .updateButton {
@@ -24,4 +25,13 @@
 
 .main {
   border-bottom: solid;
+}
+
+.dogImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
 }
