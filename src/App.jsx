@@ -30,8 +30,8 @@ export const App = () => {
           <DogImage imageUrl={dogUrl} />
           <br />
         </div>
-        <DogListContainer />
       </main>
+      <DogListContainer />
     </>
   )
 }
