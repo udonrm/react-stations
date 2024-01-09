@@ -1,0 +1,37 @@
+.header {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogImage {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+}
+
+.updateButton {
+  color: white;
+  background-color: rgb(0, 145, 255);
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+.main {
+  border-bottom: solid;
+}
+
+.dogImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
